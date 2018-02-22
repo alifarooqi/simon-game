@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Game</title>
+  <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet' type='text/css'>
+<audio id="sound-r" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" preload="auto"></audio>
+<audio id="sound-g" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" preload="auto"></audio>
+<audio id="sound-b" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" preload="auto"></audio>
+<audio id="sound-y" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" preload="auto"></audio>
+<audio id="error" src="https://s3.amazonaws.com/freesoundeffects/mp3/mp3_56053.mp3" preload="auto"></audio>
+<audio id="victory" src="https://soundbible.com/mp3/Ta%20Da-SoundBible.com-1884170640.mp3" preload="auto"></audio>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container">
+  <div id="main">
+    <div id="red" class="colorBtn" onclick="huClick('r')">
+      <div id="r" class="filler"></div>
+    </div>
+    <div id="green" class="colorBtn" onclick="huClick('g')">
+      <div id="g" class="filler"></div>
+    </div>
+    <div id="blue" class="colorBtn" onclick="huClick('b')">
+      <div id="b" class="filler"></div>
+    </div>
+    <div id="yellow" class="colorBtn" onclick="huClick('y')">
+      <div id="y" class="filler"></div>
+    </div> 
+    <div class="onoffswitch">
+      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+      <label class="onoffswitch-label" for="myonoffswitch" onclick="onOff()">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+      </label>
+  </div>
+    <h4 style="position:relative; top: -330px; color: #999">Off<span style="display:inline-block; width: 50px;"></span>On</h4>
+    <div class="btn-container row">
+      <div class="col-xs-5" id="screen"></div>
+      <div class="col-xs-3">
+        <div class="round-btn" id="start" onclick="start()"></div>
+        <h5 id="start">Start</h5>
+      </div>
+      <div class="col-xs-3">
+        <div class="red-led" id="strictLight"></div>
+        <div class="round-btn yellow" id="start" onclick="btnStrict()"></div>
+        <h5 id="strict">Strict</h5>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
